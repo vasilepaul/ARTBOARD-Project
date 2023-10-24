@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+}
+
+.navSearch {
+  background-image: url(images/header_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  height: 51.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchInput {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.search {
+  width: 31.4375rem;
+  height: 3.9375rem;
+  transition: box-shadow 0.8s;
+  border: 1px solid black;
+}
+.search:hover {
+  transition: box-shadow 0.8s;
+  border: none;
+}
+.search[placeholder] {
+  color: #999;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 185.714% */
+  letter-spacing: 0.175rem;
+}
+.btnsearch {
+  width: 9.5625rem;
+  height: 3.9375rem;
+  background-color: #5474fd;
+  stroke-width: 2px;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Aleo;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 185.714% */
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.btnsearch:hover {
+  opacity: 0.6;
+  color: black;
+  font-weight: 900;
+  transition: 0.8s;
+}
+.btnSearchImg {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.titleBrend {
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.titleDescription {
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.42625rem;
+}
+
+.scrollDown {
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 185.714% */
+  letter-spacing: 0.175rem;
+  margin-top: 200px;
+}
+
+.scrollDownImg {
+  cursor: pointer;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #5474fd;
+  box-sizing: border-box;
+  padding-top: 0;
+}
+
+.menuComponent {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menuList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menuLink {
+  color: #fff;
+  font-family: Aleo;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  margin-left: 35px;
+  text-decoration: none;
+  position: relative;
+}
+
+.menuLink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  transition: 0.3s ease;
+}
+
+.menuLink::after {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menuLink:hover::after {
+  width: 100%;
+}
