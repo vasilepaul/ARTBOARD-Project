@@ -235,10 +235,24 @@ header {
 }
 .howItWork {
   background-color: #333;
+  height: 21.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.howItWorkWrap {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 21.25rem;
+  position: relative;
+  width: 50%;
+}
+.howItWorkWrap::after {
+  position: absolute;
+  content: url("images/Shape\ 1.png");
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .howItWorkIcon {
   display: flex;
@@ -246,11 +260,11 @@ header {
   align-items: center;
   width: 6.1875rem;
   height: 6.1875rem;
+  background-color: #333;
+  border-radius: 50%;
 }
 .iconImg {
   margin-bottom: 50px;
-  background-color: #333;
-  border-radius: 50%;
 }
 .iconText {
   color: #e8e8e8;
@@ -260,4 +274,159 @@ header {
   font-weight: 400;
   line-height: 1.625rem; /* 72.222% */
   width: 15.25rem;
+}
+.spainTop {
+  background-image: url(images/spainTop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 43.75rem;
+  position: relative;
+}
+.spainTopCard {
+  width: 33.9375rem;
+  height: 23.375rem;
+  background-color: #232323;
+  opacity: 0.9;
+  position: absolute;
+  left: 20%;
+  top: 35%;
+  padding: 60px 50px 0 50px;
+}
+.spainStyle h2 {
+  color: #e8e8e8;
+  font-family: Josefin Sans;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 130% */
+  letter-spacing: 0.09375rem;
+}
+.spainStyle h1 {
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 130% */
+  text-transform: uppercase;
+}
+.spainStyle p {
+  color: #e8e8e8;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.spainStyle button {
+  width: 14.25rem;
+  height: 3.9375rem;
+  background-color: #5474fd;
+  color: #fff;
+  font-family: Aleo;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  margin-top: 40px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.spainBottom {
+  background-image: url(images/spainBottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 43.75rem;
+  position: relative;
+}
+.spainBottomCard {
+  width: 33.9375rem;
+  height: 23.375rem;
+  background-color: #232323;
+  opacity: 0.9;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  padding: 60px 50px 0 50px;
+}
+#reviewBlock {
+  background-image: url(images/reviewBackgr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.6875rem;
+  position: relative;
+}
+.reviewTitle {
+  color: #fff;
+  text-align: center;
+  font-family: Aleo;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 72.222% */
+  position: relative;
+  top: 100px;
+  margin: 0;
+}
+.review {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.reviewImg {
+  width: 27.8125rem;
+  height: 17.75rem;
+}
+.reviewText {
+  width: 41.75rem;
+  height: 17.9375rem;
+  background-color: #333;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.reviewText h1 {
+  color: #fefefe;
+  font-family: Josefin Sans;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 130% */
+  text-transform: uppercase;
+}
+.reviewText p {
+  color: #e8e8e8;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+footer {
+  background-color: #232323;
+  height: 16.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerBrand {
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.625rem; /* 108.333% */
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footerDescription {
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+}
+footer img {
+  cursor: pointer;
 }
